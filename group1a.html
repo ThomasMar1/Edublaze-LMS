@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+	
+</head>
+
+<body>
+<div id="menu">
+<ul class="a">
+  	<li class="a" style="float:left"><img src="edublaze.png" alt="EduBlaze" style="height:50px" ></li>
+  	<li class="a" style="float:left"><h1>Group 1</h1></li>
+  	<li class="a" style="float:right"><a href="#LogOut"><img src="logout.png" alt="logout" style="height:30px" ></a></li>
+  	<li class="a" style="float:right"><a href="#Settings"><img src="settings.png" alt="settings" style="height:30px" ></a></li>
+  	<li class="a" style="float:right"><a href="#Notifications"><img src="notifications.png" alt="notifications" style="height:30px" ></a></li>
+</ul>
+</div>
+
+<ul class="b">
+	<li id="side" class="a"><font face="Tahoma"><a href="index.html">Home</a></li>
+	<li id="side" class="a"><font face="Tahoma"><span onclick="openNav()"><a href="#Assignment">Assignments</a></span></li>
+ 	<li id="side" class="a"><font face="Tahoma"><span onclick="openNav2()"><a class="active" href="#Groups">Groups</a></span></li>
+</ul>
+<div id="assignmentNav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p>Assignments</p>
+  <a href="assignment1.html">Assignment 1:<br>History of the Portrait</a>
+  <a href="assignment2.html">Assignment 2:<br>Landscapes</a>
+</div>
+
+<div id="groupNav" class="sidenav">
+    <p>Groups</p>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <a href="group1.html">Assignment 1 Group<br>(Group 1)</a>
+  <a href="group2.html">Assignment 2 Group<br>(Group 4)</a>
+</div>
+
+
+
+
+
+<!-- BODY CONTENT --> 
+
+<br><br><br>
+<div class='container'>
+	<div class='annoucements'>
+		<div id="div1"><a href="group1.html"><img align="left" src="back.png" alt="send" style="height:20px" ></a>   Group Chat</div>
+		<div id="div6">
+			<div class="box3">
+				<div class="chatbox2">
+					<p style="font-size:8px;">Juliette</p>
+				 	So my questions are on the selfie
+				</div>
+				<div class="chatbox2">
+					<p style="font-size:8px;">Juliette</p>
+				 	I have to like talk about how its different from a 1960s self portrait
+				</div>
+				<div class="chatbox">
+					<p style="font-size:8px;">Jane</p>
+				 	Answer how people can take selfies on their own while olden day portraits have to have a photographer there.
+				</div>
+				<div class="chatbox2">
+					<p style="font-size:8px;">Juliette</p>
+				 	Thanks Jane!! :D
+				</div>
+				<div class="chatbox">
+					<p style="font-size:8px;">James</p>
+				 	Yep that will work.
+				</div>
+					
+					<div class="chatbox3" >
+						<p style="font-size:8px;">Juliette</p>
+						<span id="newchat">	</span>
+					
+					</div>
+
+
+
+			</div>
+			
+		</div>
+		<div id="div7">
+			<form >
+		  	  <input style="border: 1px solid ; width:90%; font-size:14px;" autocomplete="off" name="chat" id="chat"><a href="#Add"><img id="send" align="right" src="send.png" alt="send" style="height:20px"  onClick="groupchat()"  ></a> <br>
+	  </form>	
+		</div>
+	</div>
+	<div class 'calendar'>
+		<div id="div2">Group Members </div>
+		<div id="div4">
+			<ul class="d">
+				<li style="margin-left:10px; margin-bottom:10px;"><font face="Tahoma">Juliette Anderson (Me)</li>
+				<li style="margin-left:10px; margin-bottom:10px;"><font face="Tahoma">Jane Smith</li>
+				<li style="margin-left:10px; margin-bottom:10px;"><font face="Tahoma">Josh Rogers</li>
+				<li style="margin-left:10px; margin-bottom:10px;"><font face="Tahoma">James Band</li>
+					
+				
+					
+			</ul>
+		</div>
+	</div>
+	<div class 'Files'>
+		<div id="div5">Files<a href="#Add"><img align="right" src="add.png" alt="add" style="height:20px" ></a></div>
+		<div id="div4">
+		</div>
+	</div>
+
+
+</div>
+
+<!-- JAVASCRIPT CODE --> 
+
+<script>
+function openNav() {
+    document.getElementById("assignmentNav").style.width = "250px";
+	document.getElementById("groupNav").style.width = "0";
+}
+
+function closeNav() {
+    document.getElementById("assignmentNav").style.width = "0";
+}
+function openNav2() {
+    document.getElementById("groupNav").style.width = "250px";
+	document.getElementById("assignmentNav").style.width = "0";
+}
+
+function closeNav2() {
+    document.getElementById("groupNav").style.width = "0";
+}
+
+
+function groupchat() {
+	document.getElementsByClassName('chatbox3')[0].style.display = "block";
+	document.getElementById("newchat").innerHTML = document.getElementById('chat').value;
+    document.getElementById("chat").value = "";
+      }
+	  
+
+	  
+</script>
+
+
+</body>
+</html>

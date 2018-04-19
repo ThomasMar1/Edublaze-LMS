@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+	
+</head>
+
+<body>
+<div id="menu">
+<ul class="a">
+  	<li class="a" style="float:left"><img src="edublaze.png" alt="EduBlaze" style="height:50px" ></li>
+  	<li class="a" style="float:left"><h1>My Home</h1></li>
+  	<li class="a" style="float:right"><a href="#LogOut"><img src="logout.png" alt="logout" style="height:30px" ></a></li>
+  	<li class="a" style="float:right"><a href="#Settings"><img src="settings.png" alt="settings" style="height:30px" ></a></li>
+  	<li class="a" style="float:right"><a href="#Notifications"><img src="notifications.png" alt="notifications" style="height:30px" ></a></li>
+</ul>
+</div>
+
+<ul class="b">
+	<li id="side" class="a"><font face="Tahoma"><a class="active" href="index.html">Home</a></li>
+	<li id="side" class="a"><font face="Tahoma"><span onclick="openNav()"><a href="#Assignment">Assignments</a></span></li>
+ 	<li id="side" class="a"><font face="Tahoma"><span onclick="openNav2()"><a href="#Groups">Groups</a></span></li>
+</ul>
+<div id="assignmentNav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p class="bodytext">Assignments</p>
+  <a href="assignment1.html">Assignment 1:<br>History of the Portrait</a>
+  <a href="assignment2.html">Assignment 2:<br>Landscapes</a>
+</div>
+
+<div id="groupNav" class="sidenav">
+    <p>Groups</p>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <a href="group1.html">Assignment 1 Group<br>(Group 1)</a>
+  <a href="group2.html">Assignment 2 Group<br>(Group 4)</a>
+</div>
+
+
+
+
+
+<!-- BODY CONTENT --> 
+
+<br><br><br>
+<div class='container'><p>
+	<div class='annoucements'>
+		<div id="div1">Teacher Annoucements</div>
+		<div id="div3">
+			<div class="box2">
+				<div class="annoucementbox">
+				  <a href="#"><b>Reminder of your assignment</b> 
+				  <br><br>
+				  Reminder that your assignments are due soon.
+					<p style="font-size:8px; text-align:right">Mr. Johnson     19/5 8:10am</p>	</a> 
+				</div>
+				<div class="annoucementbox">
+				  <a href="#"><b>New Assignment Ready!</b> 
+				  <br><br>
+				  Hey Class! I have opened the new assignment for your groups to complete. It is on the History of the Portrait as we have talked about in the class.
+				  Good luck answering the questions and remember to discuss with your peers on how to answer the questions. Each memebers questions are different!<br><br> Mr. J
+					<p style="font-size:8px; text-align:right">Mr. Johnson     18/4 12:01pm</p>	 </a> 
+				</div>					
+			</div>
+			
+		</div>
+	</div>
+	<div class 'calendar'>
+		<div id="div2">Calendar </div>
+		<div id="div4">
+		<div class="month">      
+		  <ul>
+		    <li class="month"> May 2017</li>
+		  </ul>
+		</div>
+
+		<ul>
+  		  <li class="day">Sun</li>
+		  <li class="day">Mon</li>
+		  <li class="day">Tue</li>
+		  <li class="day">Wed</li>
+		  <li class="day">Thu</li>
+		  <li class="day">Fri</li>
+		  <li class="day">Sat</li>
+		</ul>
+
+		<ul>  
+  		  <li class="day"> </li>
+		  <li class="day">1</li>
+		  <li class="day">2</li>
+		  <li class="day">3</li>
+		  <li class="day">4</li>
+		  <li class="day">5</li>
+		  <li class="day">6</li>
+		  <li class="day">7</li>
+		  <li class="day">8</li>
+		  <li class="day">9</li>
+		  <li class="day"><span class="active">10</span></li>
+		  <li class="day">11</li>
+		  <li class="day">12</li>
+		  <li class="day">13</li>
+		  <li class="day">14</li>
+		  <li class="day">15</li>
+		  <li class="day">16</li>
+		  <li class="day">17</li>
+		  <li class="day">18</li>
+		  <li class="day">19</li>
+		  <li class="day">20</li>
+		  <li class="day">21</li>
+		  <li class="day">22</li>
+		  <li class="day">23</li>
+		  <li class="day">24</li>
+		  <li class="day">25</li>
+		  <li class="day">26</li>
+		  <li class="day">27</li>
+		  <li class="day">28</li>
+		  <li class="day">29</li>
+		  <li class="day">30</li>
+		  <li class="day">31</li>
+		</ul>
+		</div>
+	</div>
+	<div class 'todo'>
+		<div id="div5">To-Do List <a href="#Add"><img align="right" src="add.png" alt="add" style="height:20px" ></a></div>
+		<div id="div4">
+			<div class="box">
+			    <input type="checkbox"> Complete assignment on landscapes </input></br><br>
+			    <input type="checkbox"> Review Jane's questions </input></br><br>
+			    <input type="checkbox"> Answer my questions </input></br><br>
+			    <input type="checkbox"> Email Mr. Johnson about last assigment </input></br><br>
+			    <input type="checkbox"> Review Josh's questions </input></br><br>
+			    <input type="checkbox"> Submit my portfolio for Assignment </input></br><br>
+				
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<!-- JAVASCRIPT CODE --> 
+
+<script>
+function openNav() {
+    document.getElementById("assignmentNav").style.width = "250px";
+	document.getElementById("groupNav").style.width = "0";
+}
+
+function closeNav() {
+    document.getElementById("assignmentNav").style.width = "0";
+}
+function openNav2() {
+    document.getElementById("groupNav").style.width = "250px";
+	document.getElementById("assignmentNav").style.width = "0";
+}
+
+function closeNav2() {
+    document.getElementById("groupNav").style.width = "0";
+}
+</script>
+
+</body>
+</html>

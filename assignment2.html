@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+	
+</head>
+
+<body>
+<div id="menu">
+<ul class="a">
+  	<li class="a" style="float:left"><img src="edublaze.png" alt="EduBlaze" style="height:50px" ></li>
+  	<li class="a" style="float:left"><h1>Assignment 2</h1></li>
+  	<li class="a" style="float:right"><a href="#LogOut"><img src="logout.png" alt="logout" style="height:30px" ></a></li>
+  	<li class="a" style="float:right"><a href="#Settings"><img src="settings.png" alt="settings" style="height:30px" ></a></li>
+  	<li class="a" style="float:right"><a href="#Notifications"><img src="notifications.png" alt="notifications" style="height:30px" ></a></li>
+</ul>
+</div>
+
+<ul class="b">
+	<li id="side" class="a"><font face="Tahoma"><a href="index.html">Home</a></li>
+	<li id="side" class="a"><font face="Tahoma"><span onclick="openNav()"><a class="active" href="#Assignment">Assignments</a></span></li>
+ 	<li id="side" class="a"><font face="Tahoma"><span onclick="openNav2()"><a href="#Groups">Groups</a></span></li>
+</ul>
+<div id="assignmentNav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p class="bodytext">
+Assignments</p>
+  <a href="assignment1.html">Assignment 1:<br>History of the Portrait</a>
+  <a href="assignment2.html">Assignment 2:<br>Landscapes</a>
+</div>
+
+<div id="groupNav" class="sidenav">
+    <p class="bodytext">
+Groups</p>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <a href="group1.html">Assignment 1 Group<br>(Group 1)</a>
+  <a href="group2.html">Assignment 2 Group<br>(Group 4)</a>
+</div>
+
+
+<br><br><br><br>
+<div style="width: 70%; margin-left:195px;">
+
+	<p class="bodytext2">
+		<h2>Assignment 2: Landscapes</b></h2>
+		<br>
+		Page not implemented as it is not part of the walkthrough
+		<br>
+		<br>
+		<br>
+
+		<br>
+		<br>
+		<br>
+								
+	</p>
+
+</div> 
+
+
+<!-- JAVASCRIPT CODE --> 
+
+<script>
+function openNav() {
+    document.getElementById("assignmentNav").style.width = "250px";
+	document.getElementById("groupNav").style.width = "0";
+}
+
+function closeNav() {
+    document.getElementById("assignmentNav").style.width = "0";
+}
+function openNav2() {
+    document.getElementById("groupNav").style.width = "250px";
+	document.getElementById("assignmentNav").style.width = "0";
+}
+
+function closeNav2() {
+    document.getElementById("groupNav").style.width = "0";
+}
+</script>
+
+</body>
+</html>
